@@ -53,6 +53,11 @@
     hsl(45, 100%, 72%), 
     hsl(35, 100%, 68%)
   );
+  --text-gradient-blue: linear-gradient(
+    to right, 
+    hsl(182, 91%, 83%), 
+    hsl(182, 98%, 67%)
+  );
 
   /* solid */
 
@@ -440,7 +445,7 @@ main {
 
 .social-item .social-link {
   color: var(--light-gray-70);
-  font-size: 18px;
+  font-size: 30px;
 }
 
 
@@ -785,14 +790,23 @@ main {
   margin-left: 45px;
 }
 
-.timeline-item { position: relative; }
+.timeline-item { position: relative;}
 
-.timeline-item:not(:last-child) { margin-bottom: 20px; }
+timeline-item.p3 {
+  font-family: "Lucida Console", "Courier New", monospace;
+}
 
 .timeline-item-title {
   font-size: var(--fs-6);
   line-height: 1.3;
   margin-bottom: 7px;
+}
+
+.timeline-item-subtitle {
+  font-size: var(--fs-6);
+  line-height: 1.3;
+  margin-bottom: 7px;
+  font-weight:normal
 }
 
 .timeline-list span {
@@ -804,23 +818,67 @@ main {
 .timeline-item:not(:last-child)::before {
   content: "";
   position: absolute;
-  top: -25px;
+  top: -20px;
   left: -30px;
   width: 1px;
-  height: calc(100% + 50px);
+  height: calc(100% + 100px);
   background: var(--jet);
 }
 
 .timeline-item::after {
   content: "";
   position: absolute;
-  top: 5px;
-  left: -33px;
-  height: 6px;
-  width: 6px;
-  background: var(--text-gradient-yellow);
+  top: 0px;
+  /* background: var(--text-gradient-yellow);
   border-radius: 50%;
-  box-shadow: 0 0 0 4px var(--jet);
+  box-shadow: 0 0 0 4px var(--jet); */
+  margin-left: -20px;
+
+  padding: 40px 40px 40px 40px;
+  /* reset styles (optional): */
+  background-size: 55%;
+}
+
+.timeline-item.iu::after {
+  background: url(../images/iu_logo.png) no-repeat left top;
+  padding: 40px 40px 40px 40px;
+  background-size: 55%;
+}
+
+.timeline-item.upf::after {
+  background: url(../images/upf_logo.png) no-repeat left top;
+  padding: 40px 40px 40px 40px;
+  background-size: 55%;
+}
+
+.timeline-item.berklee::after {
+  background: url(../images/berklee_logo.png) no-repeat left top;
+  padding: 40px 40px 40px 40px;
+  background-size: 55%;
+}
+
+.timeline-item.google::after {
+  background: url(../images/google_logo.png) no-repeat left top;
+  padding: 40px 40px 40px 40px;
+  background-size: 55%;
+}
+
+.timeline-item.apple::after {
+  background: url(../images/apple_logo.png) no-repeat left top;
+  padding: 40px 40px 40px 40px;
+  background-size: 55%;
+}
+
+.timeline-item.merl::after {
+  background: url(../images/merl_logo.png) no-repeat left top;
+  padding: 40px 40px 40px 40px;
+  background-size: 55%;
+}
+
+.timeline-item.mit::after {
+  background: url(../images/mit_logo.png) no-repeat left top;
+  padding: 40px 40px 40px 40px;
+  background-size: 55%;
 }
 
 .timeline-text {
@@ -828,6 +886,58 @@ main {
   font-weight: var(--fw-300);
   line-height: 1.6;
 }
+
+.timeline-sublist {
+  font-size: var(--fs-6);
+  margin-left: 45px;
+}
+
+.timeline-subitem { position: relative; color: var(--light-gray); top: 20px}
+
+.timeline-subitem:not(:last-child) { margin-bottom: 20px;}
+.timeline-subitem:last-child { margin-bottom: 50px;}
+
+.timeline-subitem-title {
+  font-size: var(--fs-6);
+  line-height: 1.3;
+  margin-bottom: 7px;
+}
+
+.timeline-sublist span {
+  color: var(--vegas-gold);
+  font-weight: var(--fw-400);
+  line-height: 1.6;
+}
+
+.timeline-subitem:not(:last-child)::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: -30px;
+  width: 1px;
+  height: calc(100% + 50px);
+  background: var(--jet);
+}
+
+.timeline-subitem::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: -33px;
+  height: 6px;
+  width: 6px;
+  background: var(--text-gradient-blue);
+  border-radius: 50%;
+  box-shadow: 0 0 0 4px var(--jet);
+}
+
+.timeline-subtext {
+  margin-top: 20px;
+  color: var(--light-gray);
+  font-weight: var(--fw-300);
+  line-height: 1.6;
+}
+
 
 
 /**

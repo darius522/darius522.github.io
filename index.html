@@ -5,7 +5,33 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>vCard - Personal Portfolio</title>
+  <title>Darius Pétermann - AI for Audio</title>
+
+  <style>
+    a:link {
+      color: rgb(222, 174, 79); 
+      background-color: transparent; 
+      text-decoration: none;
+    }
+    
+    a:visited {
+      color: rgb(222, 174, 79);
+      background-color: transparent;
+      text-decoration: none;
+    }
+    
+    a:hover {
+      color: red;
+      background-color: transparent;
+      text-decoration: underline;
+    }
+    
+    a:active {
+      color: yellow;
+      background-color: transparent;
+      text-decoration: underline;
+    }
+    </style>
 
   <!--
     - favicon
@@ -42,13 +68,13 @@
       <div class="sidebar-info">
 
         <figure class="avatar-box">
-          <img src="./assets/images/my-avatar.png" alt="Richard hanrick" width="80">
+          <img src="./assets/images/avatar.png" alt="Darius Pétermann" width="80">
         </figure>
 
         <div class="info-content">
-          <h1 class="name" title="Richard hanrick">Richard hanrick</h1>
+          <h1 class="name" title="Darius Pétermann">Darius Pétermann</h1>
 
-          <p class="title">Web developer</p>
+          <p class="title">AI Researcher</p>
         </div>
 
         <button class="info_more-btn" data-sidebar-btn>
@@ -59,7 +85,7 @@
 
       </div>
 
-      <div class="sidebar-info_more">
+      <!-- <div class="sidebar-info_more">
 
         <div class="separator"></div>
 
@@ -74,12 +100,12 @@
             <div class="contact-info">
               <p class="contact-title">Email</p>
 
-              <a href="mailto:richard@example.com" class="contact-link">richard@example.com</a>
+              <a href="mailto:darius.petermann@gmail.com" class="contact-link">darius.petermann@gmail.com</a>
             </div>
 
-          </li>
+          </li> -->
 
-          <li class="contact-item">
+          <!-- <li class="contact-item">
 
             <div class="icon-box">
               <ion-icon name="phone-portrait-outline"></ion-icon>
@@ -91,9 +117,9 @@
               <a href="tel:+12133522795" class="contact-link">+1 (213) 352-2795</a>
             </div>
 
-          </li>
+          </li> -->
 
-          <li class="contact-item">
+          <!-- <li class="contact-item">
 
             <div class="icon-box">
               <ion-icon name="calendar-outline"></ion-icon>
@@ -105,9 +131,9 @@
               <time datetime="1982-06-23">June 23, 1982</time>
             </div>
 
-          </li>
+          </li> -->
 
-          <li class="contact-item">
+          <!-- <li class="contact-item">
 
             <div class="icon-box">
               <ion-icon name="location-outline"></ion-icon>
@@ -119,29 +145,35 @@
               <address>Sacramento, California, USA</address>
             </div>
 
-          </li>
+          </li> -->
 
-        </ul>
+        <!-- </ul> -->
 
         <div class="separator"></div>
 
         <ul class="social-list">
 
           <li class="social-item">
-            <a href="#" class="social-link">
-              <ion-icon name="logo-facebook"></ion-icon>
+            <a href="https://scholar.google.com/citations?user=e5ARpUAAAAAJ&hl=en" class="social-link">
+              <ion-icon name="school"></ion-icon>
             </a>
           </li>
 
           <li class="social-item">
-            <a href="#" class="social-link">
-              <ion-icon name="logo-twitter"></ion-icon>
+            <a href="https://www.linkedin.com/in/darius-petermann/" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
             </a>
           </li>
 
           <li class="social-item">
-            <a href="#" class="social-link">
-              <ion-icon name="logo-instagram"></ion-icon>
+            <a href="https://github.com/darius522" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="mailto:darius.petermann@gmail.com" class="social-link">
+              <ion-icon name="paper-plane"></ion-icon>
             </a>
           </li>
 
@@ -174,7 +206,7 @@
           </li>
 
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Resume</button>
+            <button class="navbar-link" data-nav-link>CV</button>
           </li>
 
           <li class="navbar-item">
@@ -204,206 +236,20 @@
       <article class="about  active" data-page="about">
 
         <header>
-          <h2 class="h2 article-title">About me</h2>
+          <h2 class="h2 article-title">Hi, I'm Darius!</h2>
         </header>
 
         <section class="about-text">
-          <p>
-            I'm Creative Director and UI/UX Designer from Sydney, Australia, working in web development and print media.
-            I enjoy
-            turning complex problems into simple, beautiful and intuitive designs.
+          <p class="inline-block">
+            I am a PhD Candidate in Intelligent Systems Engineering and Computer Science at Indiana University, advised by <a href="https://minjekim.com" style="display: inline-block;">Dr. Minje Kim</a>. The bulk of my work tackles audio source separation and neural audio coding problems. I am interested in investigating the design and research of new autonomous machine audition models with real and applicable uses.
+             
+            In the past, I have worked as full-time engineer for the <a href="https://www.apple.com/logic-pro/" style="display: inline-block;">Apple Music Apps Team</a> (Logic Pro, GarageBand) and conducted research at <a href="https://www.merl.com/research/speech-audio" style="display: inline-block;">Mitsubishi Electrical Laboratories (MERL)</a> and <a href="https://research.google/research-areas/machine-perception/" style="display: inline-block;">Google Research</a>. I will be interning at <a href="https://research.netflix.com/research-area/machine-learning" style="display: inline-block;">Netflix</a> as an ML Research Intern this upcoming summer (2024).
+            
           </p>
 
           <p>
-            My job is to build your website so that it is functional and user-friendly but at the same time attractive.
-            Moreover, I
-            add personal touch to your product and make sure that is eye-catching and easy to use. My aim is to bring
-            across your
-            message and identity in the most creative way. I created web design for many famous brand companies.
+            I will be graduating later this year and soon be on the look-out for full-time opportunities in the industry. Feel free to <a href="mailto:darius.petermann@gmail.com" class="contact-link" style="display: inline-block;">reach-out</a> with any opportunities lining-up with my background and let's discuss!
           </p>
-        </section>
-
-
-        <!--
-          - service
-        -->
-
-        <section class="service">
-
-          <h3 class="h3 service-title">What i'm doing</h3>
-
-          <ul class="service-list">
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-design.svg
-                " alt="design icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Web design</h4>
-
-                <p class="service-item-text">
-                  The most modern and high-quality design made at a professional level.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Web development</h4>
-
-                <p class="service-item-text">
-                  High-quality development of sites at the professional level.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Mobile apps</h4>
-
-                <p class="service-item-text">
-                  Professional development of applications for iOS and Android.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Photography</h4>
-
-                <p class="service-item-text">
-                  I make high-quality photos of any category at a professional level.
-                </p>
-              </div>
-
-            </li>
-
-          </ul>
-
-        </section>
-
-
-        <!--
-          - testimonials
-        -->
-
-        <section class="testimonials">
-
-          <h3 class="h3 testimonials-title">Testimonials</h3>
-
-          <ul class="testimonials-list has-scrollbar">
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Daniel lewis</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                    lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-2.png" alt="Jessica miller" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Jessica miller</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                    lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-3.png" alt="Emily evans" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Emily evans</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                    lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-4.png" alt="Henry william" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Henry william</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                    lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-          </ul>
-
         </section>
 
 
@@ -437,11 +283,6 @@
 
               <div data-modal-text>
                 <p>
-                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                  lot of experience
-                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                  consectetur adipiscing
-                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
                 </p>
               </div>
 
@@ -450,57 +291,6 @@
           </section>
 
         </div>
-
-
-        <!--
-          - clients
-        -->
-
-        <section class="clients">
-
-          <h3 class="h3 clients-title">Clients</h3>
-
-          <ul class="clients-list has-scrollbar">
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-1-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-2-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-3-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-4-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-5-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-6-color.png" alt="client logo">
-              </a>
-            </li>
-
-          </ul>
-
-        </section>
 
       </article>
 
@@ -512,10 +302,10 @@
         - #RESUME
       -->
 
-      <article class="resume" data-page="resume">
+      <article class="cv" data-page="cv">
 
         <header>
-          <h2 class="h2 article-title">Resume</h2>
+          <h2 class="h2 article-title">CV</h2>
         </header>
 
         <section class="timeline">
@@ -530,45 +320,64 @@
 
           <ol class="timeline-list">
 
-            <li class="timeline-item">
+            <li class="timeline-item iu">
+              <h4 class="h4 timeline-title">Ph.D. Candidate in Intelligent Systems Engineering and Computer Science</h4>
+              <h5 class="h5 timeline-subitem-title"><em>Luddy School of Informatics, Computing, and Engineering, Indiana University (GPA: 4.0 / 4.0)</em></h5>
 
-              <h4 class="h4 timeline-item-title">University school of the arts</h4>
+              <span>2021 — 2024 (Expected)</span>
 
-              <span>2007 — 2008</span>
-
-              <p class="timeline-text">
-                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
-                quas molestias
-                exceptur.
+                <ol class="timeline-sublist">
+                  <li class="timeline-subitem">
+                  <p>Selected Coursework: Machine Learning for Signal Processing, Deep Learning, Computer Vision, Applied Machine Learning</p>
+                  </li>
+                  <li class="timeline-subitem">
+                    <p>Research Group: Signals and AI Group in Engineering (SAIGE)</p>
+                  </li>
+                  <li class="timeline-subitem">
+                    <p>Advisor: Prof. Minje Kim</p>
+                  </li>
+                </ol>
               </p>
-
             </li>
 
-            <li class="timeline-item">
+            <li class="timeline-item upf">
+              <h4 class="h4 timeline-title">M.Sc. in Information and Communication Engineering</h4>
+              <h5 class="h5 timeline-subitem-title"><em>Dept. of Information and Communication Technologies, Universitat Pompeu-Fabra (GPA: 9.5 / 10.0)</em></h5>
 
-              <h4 class="h4 timeline-item-title">New york academy of art</h4>
+              <span>2019 — 2020</span>
 
-              <span>2006 — 2007</span>
-
-              <p class="timeline-text">
-                Ratione voluptatem sequi nesciunt, facere quisquams facere menda ossimus, omnis voluptas assumenda est
-                omnis..
+                <ol class="timeline-sublist">
+                  <li class="timeline-subitem">
+                  <p>Selected Coursework: Music Information Retrieval, System Design, Audio Signal Processing, ML for Audio, Research Methods, Reinforcement Learning</p>
+                  </li>
+                  <li class="timeline-subitem">
+                    <p>Thesis: “SATB Voice Segregation for Monaural Recordings”</p>
+                  </li>
+                  <li class="timeline-subitem">
+                    <p>Advisor: Dr. Pritish Chandna</p>
+                  </li>
+                </ol>
               </p>
-
             </li>
 
-            <li class="timeline-item">
+            <li class="timeline-item berklee">
+              <h4 class="h4 timeline-title">B.M. in Electronic Production & Design</h4>
+              <h5 class="h5 timeline-subitem-title"><em>Electronic Production & Design Dept, Berklee College of Music (GPA: 3.8 / 4.0)</em></h5>
 
-              <h4 class="h4 timeline-item-title">High school of art and design</h4>
+              <span>2013 — 2016</span>
 
-              <span>2002 — 2004</span>
-
-              <p class="timeline-text">
-                Duis aute irure dolor in reprehenderit in voluptate, quila voluptas mag odit aut fugit, sed consequuntur
-                magni dolores
-                eos.
+                <ol class="timeline-sublist">
+                  <li class="timeline-subitem">
+                  <p>Selected Coursework: Digital Signal Processing, Physical Computing, Audio Programming in C, Principles of Audio Electronics, Music Acoustics</p>
+                  </li>
+                  <li class="timeline-subitem">
+                    <p>Thesis: “A Deep Look at Spectral Synthesis Techniques Through csConvolve”</p>
+                  </li>
+                  <li class="timeline-subitem">
+                    <p>Advisor: Dr. Richard Boulanger</p>
+                  </li>
+                </ol>
               </p>
-
             </li>
 
           </ol>
@@ -587,113 +396,145 @@
 
           <ol class="timeline-list">
 
-            <li class="timeline-item">
+            <li class="timeline-item google">
+              <h4 class="h4 timeline-title">Google Research</h4>
+              <h5 class="h5 timeline-subitem-title"><em>Student Researcher</em></h5>
 
-              <h4 class="h4 timeline-item-title">Creative director</h4>
+              <span>May 2023 — Oct 2023</span>
+              <span>Cambridge MA</span>
 
-              <span>2015 — Present</span>
-
-              <p class="timeline-text">
-                Nemo enim ipsam voluptatem blanditiis praesentium voluptum delenit atque corrupti, quos dolores et qvuas
-                molestias
-                exceptur.
+                <ol class="timeline-sublist">
+                  <li class="timeline-subitem">
+                    <p>Supervised by Dr. Hakan Erdogan, Dr. John Herhsey, and Dr. Scott Wisdom</p>
+                  </li>
+                  <li class="timeline-subitem">
+                    <p>Working on next-level unsupervised audio source separation problems</p>
+                  </li>
+                </ol>
               </p>
-
             </li>
 
-            <li class="timeline-item">
+            <li class="timeline-item merl">
+              <h4 class="h4 timeline-title">Mitsubishi Electric Research Labs (MERL)</h4>
+              <h5 class="h5 timeline-subitem-title"><em>Research Intern</em></h5>
 
-              <h4 class="h4 timeline-item-title">Art director</h4>
+              <span>Summers in 2021, 2022</span>
+              <span>Cambridge MA</span>
 
-              <span>2013 — 2015</span>
-
-              <p class="timeline-text">
-                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
-                quas molestias
-                exceptur.
+                <ol class="timeline-sublist">
+                  <li class="timeline-subitem">
+                    <p>Received $15'000 of gift-money from MERL to work on the “Cocktail Fork Problem”</p>
+                  </li>
+                  <li class="timeline-subitem">
+                    <p>Hosted by Dr. Gordon Wichern and Dr. Jonathan Le Roux</p>
+                  </li>
+                  <li class="timeline-subitem">
+                    <p>Derived and implemented new models and optimization methods for audio analysis with applications to source separation in challenging multi-source environments and using advanced machine learning techniques</p>
+                  </li>
+                </ol>
               </p>
-
             </li>
 
-            <li class="timeline-item">
+            <li class="timeline-item iu">
+              <h4 class="h4 timeline-title">Signals and AI Group in Engineering (SAIGE), Indiana University</h4>
+              <h5 class="h5 timeline-subitem-title"><em>Research Assistant</em></h5>
 
-              <h4 class="h4 timeline-item-title">Web designer</h4>
+              <span>Jan 2021 — Present</span>
+              <span>Bloomington IN</span>
 
-              <span>2010 — 2013</span>
-
-              <p class="timeline-text">
-                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
-                quas molestias
-                exceptur.
+                <ol class="timeline-sublist">
+                  <li class="timeline-subitem">
+                    <p>Conducting research pertaining to neural audio coding and audio source separation problems</p>
+                  </li>
+                  <li class="timeline-subitem">
+                    <p>Supervised by Prof. Minje Kim</p>
+                  </li>
+                </ol>
               </p>
-
             </li>
 
+            <li class="timeline-item mit">
+              <h4 class="h4 timeline-title">Senseable Intelligence Group, Massachusetts Institute of Technology (MIT)</h4>
+              <h5 class="h5 timeline-subitem-title"><em>Technical Lab Assistant</em></h5>
+
+              <span>Nov 2020 - Apr 2021</span>
+              <span>Cambridge MA</span>
+
+                <ol class="timeline-sublist">
+                  <li class="timeline-subitem">
+                    <p>Contractor for Senseable Intelligence Group, McGovern Institute for Brain Research, led by Dr. Satrajit Gosh</p>
+                  </li>
+                </ol>
+              </p>
+            </li>
+
+            <li class="timeline-item apple">
+              <h4 class="h4 timeline-title">Apple Inc.</h4>
+              <h5 class="h5 timeline-subitem-title"><em>Content Engineer</em></h5>
+
+              <span>Jun 2016 — Jul 2019</span>
+              <span>Cupertino CA</span>
+
+                <ol class="timeline-sublist">
+                  <li class="timeline-subitem">
+                    <p>Software engineer for Apple's pro Audio & Music Apps (LogicPro, GarageBand)</p>
+                  </li>
+                  <li class="timeline-subitem">
+                    <p>Designed real-time MIDI processing systems in C++ for Apple’s virtual musical instruments</p>
+                  </li>
+                </ol>
+              </p>
+            </li>
+
+            <li class="timeline-item berklee">
+              <h4 class="h4 timeline-title">Electronic Production & Design Dept, Berklee College of Music</h4>
+              <h5 class="h5 timeline-subitem-title"><em>Programming Tutor</em></h5>
+
+              <span>Sep 2015 — May 2016</span>
+              <span>Boston MA</span>
+
+                <ol class="timeline-sublist">
+                  <li class="timeline-subitem">
+                    <p>Tutored and mentored EPD students for technical classes: “Audio Programming in C”, “Digital Signal Processing”, “Csound”, “Max/MSP”</p>
+                  </li>
+                </ol>
+              </p>
+            </li>
           </ol>
 
         </section>
 
-        <section class="skill">
 
-          <h3 class="h3 skills-title">My skills</h3>
+        <section class="timeline">
 
-          <ul class="skills-list content-card">
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
 
-            <li class="skills-item">
+            <h3 class="h3">Publications</h3>
+          </div>
 
-              <div class="title-wrapper">
-                <h5 class="h5">Web design</h5>
-                <data value="80">80%</data>
-              </div>
+          <ol class="timeline-list">
 
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 80%;"></div>
-              </div>
+            <li class="timeline-item google">
+              <h4 class="h4 timeline-title">Google Research</h4>
+              <h5 class="h5 timeline-subitem-title"><em>Student Researcher</em></h5>
 
+              <span>May 2023 — Oct 2023</span>
+              <span>Cambridge MA</span>
+
+                <ol class="timeline-sublist">
+                  <li class="timeline-subitem">
+                    <p>Supervised by Dr. Hakan Erdogan, Dr. John Herhsey, and Dr. Scott Wisdom</p>
+                  </li>
+                  <li class="timeline-subitem">
+                    <p>Working on next-level unsupervised audio source separation problems</p>
+                  </li>
+                </ol>
+              </p>
             </li>
 
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Graphic design</h5>
-                <data value="70">70%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 70%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Branding</h5>
-                <data value="90">90%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 90%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">WordPress</h5>
-                <data value="50">50%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 50%;"></div>
-              </div>
-
-            </li>
-
-          </ul>
-
-        </section>
 
       </article>
 
