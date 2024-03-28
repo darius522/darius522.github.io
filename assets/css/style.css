@@ -453,6 +453,15 @@ main {
 
 
 
+#navlist li
+{
+display: inline;
+list-style-type: none;
+padding-right: 20px;
+}
+
+
+
 
 
 /*-----------------------------------*\
@@ -938,6 +947,94 @@ timeline-item.p3 {
   line-height: 1.6;
 }
 
+
+/**
+ * publications 
+ */
+
+ .publications-list {
+  list-style: none;
+  counter-reset: my-awesome-counter;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  counter-reset: item 8;
+}
+
+.publications-item {
+  counter-increment: item -1;
+  display: flex;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  color: var(--light-gray);
+}
+.publications-item::before {
+  content: "[C0" counter(item) "]";
+  font-weight: normal;
+  margin-top: 2px;
+  color: var(--light-gray);
+  font-size: 1.25rem;
+  margin-right: 0.5rem;
+  font-family: 'Courier New';
+  line-height: 1;
+}
+
+.journals-list {
+  list-style: none;
+  counter-reset: my-awesome-counter;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  counter-reset: item 3;
+}
+
+.journals-item {
+  counter-increment: item -1;
+  display: flex;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  color: var(--light-gray);
+}
+.journals-item::before {
+  content: "[J0" counter(item) "]";
+  font-weight: normal;
+  margin-top: 2px;
+  color: var(--light-gray);
+  font-size: 1.25rem;
+  margin-right: 0.5rem;
+  font-family: 'Courier New';
+  line-height: 1;
+}
+
+.patents-list {
+  list-style: none;
+  counter-reset: my-awesome-counter;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  counter-reset: item 3;
+}
+
+.patents-item {
+  counter-increment: item -1;
+  display: flex;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  color: var(--light-gray);
+}
+.patents-item::before {
+  content: "[P0" counter(item) "]";
+  font-weight: normal;
+  margin-top: 2px;
+  color: var(--light-gray);
+  font-size: 1.25rem;
+  margin-right: 0.5rem;
+  font-family: 'Courier New';
+  line-height: 1;
+}
 
 
 /**
@@ -1980,6 +2077,7 @@ textarea.form-input::-webkit-resizer { display: none; }
   }
 
   .social-list { justify-content: center; }
+  .pubdetails-list { justify-content: center; }
 
 
 
