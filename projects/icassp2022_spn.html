@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Get more icons at https://ionic.io/ionicons -->
+
+<head>
+  <!-------------------------------------------------------------------- Google tag (gtag.js) -------------------------------------------------------------------->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-EK9RC9WNKB"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-EK9RC9WNKB');
+  </script>
+  <!-------------------------------------------------------------------- Title -------------------------------------------------------------------->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ICASSP2022 SPN</title>
+  <!-------------------------------------------------------------------- Favicon -------------------------------------------------------------------->
+  <link rel="shortcut icon" href="../assets/images/logo.ico" type="image/x-icon">
+  <!-------------------------------------------------------------------- Custom CSS link -------------------------------------------------------------------->
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <!-------------------------------------------------------------------- Google Font Link-------------------------------------------------------------------->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-------------------------------------------------------------------- Styling -------------------------------------------------------------------->
+  <style>
+    a:link {
+      color: #9e9436;
+      background-color: transparent;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: #9F894B;
+      background-color: transparent;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: #7b85b5;
+      background-color: transparent;
+      text-decoration: underline;
+    }
+
+    a:active {
+      color: #e4e5ed;
+      background-color: transparent;
+      text-decoration: underline;
+    }
+
+    #rcprofile {
+      border-radius: 12px;
+    }
+
+    #rcimage {
+      border-radius: 5px;
+    }
+
+    .column {
+      float: left;
+      width: 50%;
+      padding: 5px;
+    }
+
+    img {
+      width: 100%;
+    }
+  </style>
+  <!-------------------------------------------------------------------- Script -------------------------------------------------------------------->
+</head>
+
+<body>
+  <!-------------------------------------------------------------------- Main -------------------------------------------------------------------->
+  <main>
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="../assets/images/avatar.png" alt="Darius Pétermann" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Darius Pétermann">Darius Pétermann</h1>
+
+          <p class="title">AI Researcher in Audio &#x1F3A7</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+      <div class="separator"></div>
+
+      <ul class="social-list">
+
+        <li class="social-item">
+          <a href="https://scholar.google.com/citations?user=e5ARpUAAAAAJ&hl=en" class="social-link">
+            <ion-icon name="school"></ion-icon>
+          </a>
+        </li>
+
+        <li class="social-item">
+          <a href="https://www.linkedin.com/in/darius-petermann/" class="social-link">
+            <ion-icon name="logo-linkedin"></ion-icon>
+          </a>
+        </li>
+
+        <li class="social-item">
+          <a href="https://github.com/darius522" class="social-link">
+            <ion-icon name="logo-github"></ion-icon>
+          </a>
+        </li>
+
+        <li class="social-item">
+          <a href="mailto:darius.petermann@gmail.com" class="social-link">
+            <ion-icon name="paper-plane"></ion-icon>
+          </a>
+        </li>
+
+      </ul>
+
+    </div>
+
+  </aside>
+    <!-------------------------------------------------------------------- Main Content -------------------------------------------------------------------->
+    <div class="main-content">
+      <!-------------------------------------------------------------------- Navbar -------------------------------------------------------------------->
+      <nav class="navbar">
+				<ul class="navbar-list">
+					<li class="navbar-item">
+						<button class="navbar-link" onclick="window.location.href='http://127.0.0.1:4000/';" data-nav-link>About</button>
+					</li>
+          <li class="navbar-item">
+            <a href="../cv.html" style="text-decoration:none"><button class="navbar-link">CV</button></a>
+          </li>
+          <li class="navbar-item">
+            <a href="../projects.html" style="text-decoration:none"><button class="navbar-link active">Projects</button></a>
+          </li>
+				</ul>
+			</nav>
+      <!-------------------------------------------------------------------- Article Text -------------------------------------------------------------------->
+      <article class="about  active" data-page="Generative Music in C">
+        <header>
+          <h2 class="h2 article-title" style="width: 70%">
+            ICASSP2022: SpaIn-Net: Spatially Informed Music Source Separation</h2>
+        </header>
+        <button class="project-btn" onclick="window.location.href='https://arxiv.org/abs/2202.07523';">
+          <ion-icon name="document-text"></ion-icon>
+        </button>
+        <button class="project-btn" onclick="window.location.href='https://darius522.github.io/spain-net/';">
+          <ion-icon name="headset"></ion-icon>
+        </button>
+        <button class="project-btn" onclick="window.location.href='https://www.youtube.com/watch?v=xQlKKqviY44';">
+          <ion-icon name="videocam"></ion-icon>
+        </button>
+        <button class="project-btn" onclick="window.location.href='https://github.com/darius522/spain-net';">
+          <ion-icon name="logo-github"></ion-icon>
+        </button>
+        <section class="about-text">
+          <br>
+          <p><b>Project Description:</b></p>
+
+          <p>
+
+            In this work we explore the explicit use of the stereophonic spatial information in music source separation. A naïve approach could be to assume that the source of interest is with a fixed location throughout the entire song as, but we know that this assumption does not always stand. Instead, we formulate the problem as an informed source separation task, where the source separation system benefits from the auxiliary information about the source’s spatial location. Then, the remaining question is “where do we get the information from?“
+            <br>
+            Here, we assume that the user may want to interact with this source separation process—they are eager to do better source separation, so they listen to the music carefully and provide some guidance to the system as to which direction to focus on in order to extract sources efficiently. This kind of interactive source separation is not a new idea. For example, the users can be asked to scribble on the 2D image representation of the song (a.k.a., spectrogram) to extract out a source of interest. This time, we focus on spatially informed music source separation, which we name SpaIn-Net.
+            <br>
+            Check out our ICASSP paper, source-code, project page, and audio example provided above.
+          </p>
+          <p><b>Video Presentation:</b></p>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/xQlKKqviY44?si=i24eYR4fNk63GToc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </article>
+    </div>
+  </main>
+  <!-------------------------------------------------------------------- Custom js Link -------------------------------------------------------------------->
+  <script src="../assets/js/script.js"></script>
+  <!-------------------------------------------------------------------- ionicon link -------------------------------------------------------------------->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

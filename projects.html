@@ -16,7 +16,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Custom Outdoor Kitchen</title>
+  <title>Darius Pétermann - Projects</title>
   <!-------------------------------------------------------------------- Favicon -------------------------------------------------------------------->
   <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
   <!-------------------------------------------------------------------- Custom CSS link -------------------------------------------------------------------->
@@ -43,13 +43,14 @@
     a:hover {
       color: #7b85b5;
       background-color: transparent;
-      text-decoration: underline;
+      text-decoration: none;
+      text-decoration-thickness: 3px;
     }
 
     a:active {
       color: #e4e5ed;
       background-color: transparent;
-      text-decoration: underline;
+      text-decoration: none;
     }
 
     #rcprofile {
@@ -131,100 +132,193 @@
 
       </ul>
 
-    </div>
+      </div>
 
-  </aside>
+    </aside>
     <!-------------------------------------------------------------------- Main Content -------------------------------------------------------------------->
     <div class="main-content">
       <!-------------------------------------------------------------------- Navbar -------------------------------------------------------------------->
       <nav class="navbar">
-				<ul class="navbar-list">
-					<li class="navbar-item">
-						<button class="navbar-link" onclick="window.location.href='http://127.0.0.1:4000/';" data-nav-link>About</button>
-					</li>
+        <ul class="navbar-list">
+          <li class="navbar-item">
+            <button class="navbar-link" onclick="window.location.href='http://127.0.0.1:4000/';"
+              data-nav-link>About</button>
+          </li>
           <li class="navbar-item">
             <a href="./cv.html" style="text-decoration:none"><button class="navbar-link">CV</button></a>
           </li>
           <li class="navbar-item">
-            <a href="./projects.html" style="text-decoration:none"><button class="navbar-link active">Projects</button></a>
+            <a href="./projects.html" style="text-decoration:none"><button
+                class="navbar-link active">Projects</button></a>
           </li>
-				</ul>
-			</nav>
+        </ul>
+      </nav>
       <!-------------------------------------------------------------------- Article Text -------------------------------------------------------------------->
-			<!-------------------------------------------------------------------- Portfolio -------------------------------------------------------------------->
-			<article class="projects active" data-page="projects">
-				<header>
-					<h2 class="h2 article-title">Projects</h2>
-				</header>
+      <!-------------------------------------------------------------------- Portfolio -------------------------------------------------------------------->
+      <article class="projects active" data-page="projects">
+        <header>
+          <h2 class="h2 article-title">Projects</h2>
+        </header>
 
         <section class="projects">
 
-          <ul class="filter-list">
-
-            <li class="filter-item">
-              <button class="active" data-filter-btn>All</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Web design</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Applications</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Web development</button>
-            </li>
-
-          </ul>
-
-          <div class="filter-select-box">
-
-            <button class="filter-select" data-select>
-
-              <div class="select-value" data-selecct-value>Select category</div>
-
-              <div class="select-icon">
-                <ion-icon name="chevron-down"></ion-icon>
-              </div>
-
-            </button>
-
-            <ul class="select-list">
-
-              <li class="select-item">
-                <button data-select-item>All</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Web design</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Applications</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Web development</button>
-              </li>
-
-            </ul>
-
-          </div>
+					<!-- <ul class="filter-list">
+						<li class="filter-item">
+							<button class="active" data-filter-btn>All</button>
+						</li>
+						<li class="filter-item">
+							<button data-filter-btn>CAD</button>
+						</li>
+						<li class="filter-item">
+							<button data-filter-btn>Python</button>
+						</li>
+						<li class="filter-item">
+							<button data-filter-btn>Business</button>
+						</li>
+						<li class="filter-item">
+							<button data-filter-btn>Electronics</button>
+						</li>
+					</ul>
+					<div class="filter-select-box">
+						<button class="filter-select" data-select>
+							<div class="select-value" data-selecct-value>Select category</div>
+							<div class="select-icon">
+								<ion-icon name="chevron-down"></ion-icon>
+							</div>
+						</button>
+						<ul class="select-list">
+							<li class="select-item">
+								<button data-select-item>All</button>
+							</li>
+							<li class="select-item">
+								<button data-select-item>CAD</button>
+							</li>
+							<li class="select-item">
+								<button data-select-item>Python</button>
+							</li>
+							<li class="select-item">
+								<button data-select-item>Business</button>
+							</li>
+							<li class="select-item">
+								<button data-select-item>Electronics</button>
+							</li>
+						</ul>
+					</div> -->
 
           <ul class="blog-posts-list">
 
-            <li class="blog-post-item  active" data-filter-item data-category="web design">
-              <a href="./gen_music.html">
+            <li class="blog-post-item" data-filter-item data-category="cad">
+              <a href="./projects/icassp2023_nac.html">
                 <figure class="blog-banner-box">
-                  <img src="./assets/images/gen_c.png" alt="Generative Music in C" loading="lazy">
+                  <img src="./assets/images/projects_icassp2023_mb.png" alt="ICASSP 2023 MB-HARP-Net" loading="lazy"
+                    style="position: relative;">
+                </figure>
+                <div class="blog-content">
+                  <div class="blog-meta">
+                    <p class="blog-category">Deep Learning-Audio Coding</p>
+                    <span class="dot"></span>
+                    <time datetime="2020-08-01">June 2023</time>
+                  </div>
+                  <h3 class="h3 blog-item-title">ICASSP 2023: Multi-Band Neural Audio Coding</h3>
+                  <p class="blog-text">
+                    A multi-band approach to neural audio coding, which exploits the U-Net upsampling capabilities and offers band-specific bitrate assignments.
+                  </p>
+                </div>
+              </a>
+            </li>
+
+            <li class="blog-post-item" data-filter-item data-category="cad">
+              <a href="./projects/icassp2022_spn.html">
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/projects_icassp2022_spn.png" alt="ICASSP 2022 CFP" loading="lazy"
+                    style="margin-top: 10px; margin-left: 40px; width: 80%; position: relative;">
+                </figure>
+                <div class="blog-content">
+                  <div class="blog-meta">
+                    <p class="blog-category">Deep Learning-Source Separation</p>
+                    <span class="dot"></span>
+                    <time datetime="2020-08-01">May 2022</time>
+                  </div>
+                  <h3 class="h3 blog-item-title">ICASSP 2022: SpaIn-Net: Spatially Informed Music Source Separation</h3>
+                  <p class="blog-text">
+                    We present an interactive music source separation system allowing a user to specify the spatial location of the instruments of interest. We explore various conditioning mechanisms ranging from simple concatenation to positional encoding and AdaIN.
+                  </p>
+                </div>
+              </a>
+            </li>
+
+            <li class="blog-post-item" data-filter-item data-category="cad">
+              <a href="./projects/icassp2022_cfp.html">
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/projects_icassp2022_cfp.png" alt="ICASSP 2022 CFP" loading="lazy"
+                    style="margin-top: 10px; margin-left: 40px; width: 80%; position: relative;">
+                </figure>
+                <div class="blog-content">
+                  <div class="blog-meta">
+                    <p class="blog-category">Deep Learning-Source Separation</p>
+                    <span class="dot"></span>
+                    <time datetime="2020-08-01">May 2022</time>
+                  </div>
+                  <h3 class="h3 blog-item-title">ICASSP 2022: The Cocktail Fork Problem: Three-Stem Audio Separation for Real-World Soundtracks</h3>
+                  <p class="blog-text">
+                    We introduce a new source separation dataset, "<em>Divide and Remaster"</em> (DnR), for training and testing algorithms aiming at separating monaural audio signals into speech, music, and sound effects/background stems.
+                  </p>
+                </div>
+              </a>
+            </li>
+
+            <li class="blog-post-item" data-filter-item data-category="cad">
+              <a href="./projects/waspaa2021.html">
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/projects_waspaa2021.png" alt="WASPAA 2021" loading="lazy"
+                    style="margin-top: 10px; width: 100%; position: relative;">
+                </figure>
+                <div class="blog-content">
+                  <div class="blog-meta">
+                    <p class="blog-category">Deep Learning-Audio Codec</p>
+                    <span class="dot"></span>
+                    <time datetime="2020-08-01">October 2021</time>
+                  </div>
+                  <h3 class="h3 blog-item-title">WASPAA 2021: Accepted Paper on Neural Audio Coding</h3>
+                  <p class="blog-text">
+                    Our paper entitled "<em>HARP-Net: Hyper-Autoencoded Reconstruction Propagation for Scalable Neural Audio Coding</em>" has been accepted to the <em>IEEE Workshop on Applications of Signal Processing to Audio and Acoustics</em>.
+                  </p>
+                </div>
+              </a>
+            </li>
+
+            <li class="blog-post-item" data-filter-item data-category="python">
+              <a href="./projects/ismir2020.html">
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/project_ismir2020.png" alt="ISMIR 2020 SATB" loading="lazy"
+                    style="width: 100%; position: relative;">
+                </figure>
+                <div class="blog-content">
+                  <div class="blog-meta">
+                    <p class="blog-category">Deep Learning-Music</p>
+                    <span class="dot"></span>
+                    <time datetime="2020-08-01">August 2020</time>
+                  </div>
+                  <h3 class="h3 blog-item-title">ISMIR 2020: SATB Voice Separation</h3>
+                  <p class="blog-text">
+                    Our paper entitled <em>"Deep Learning Based Source Separation Applied to
+                      Choir Ensembles"</em> has been accepted to the <em>21st International Society for Music
+                      Information Retrieval Conference</em>.
+                  </p>
+                </div>
+              </a>
+            </li>
+
+            <li class="blog-post-item" data-filter-item data-category="cad">
+              <a href="./projects/gen_music.html">
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/project_gencmusic.png" alt="Generative Music in C" loading="lazy">
                 </figure>
                 <div class="blog-content">
                   <div class="blog-meta">
                     <p class="blog-category">Csound-Generative</p>
                     <span class="dot"></span>
-                    <time datetime="2022-02-23">September 2015</time>
+                    <time datetime="2015-09-01">September 2015</time>
                   </div>
                   <h3 class="h3 blog-item-title">Generative Music in C</h3>
                   <p class="blog-text">
@@ -233,9 +327,10 @@
                 </div>
               </a>
             </li>
-					</ul>
-				</section>
-			</article>
+
+          </ul>
+        </section>
+      </article>
     </div>
   </main>
   <!-------------------------------------------------------------------- Custom js Link -------------------------------------------------------------------->
