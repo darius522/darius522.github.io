@@ -843,53 +843,59 @@ timeline-item.p3 {
   /* background: var(--text-gradient-yellow);
   border-radius: 50%;
   box-shadow: 0 0 0 4px var(--jet); */
-  margin-left: -20px;
+  left: -35px;
 
-  padding: 40px 40px 40px 40px;
   /* reset styles (optional): */
   background-size: 55%;
 }
 
 .timeline-item.iu::after {
-  background: url(../images/iu_logo.png) no-repeat left top;
-  padding: 40px 40px 40px 40px;
+  background: url(../images/iu_logo.png) no-repeat right top;
   background-size: 55%;
+  padding: 37px;
+  margin-left: -50px;
 }
 
 .timeline-item.upf::after {
-  background: url(../images/upf_logo.png) no-repeat left top;
-  padding: 40px 40px 40px 40px;
+  background: url(../images/upf_logo.png) no-repeat right top;
   background-size: 55%;
+  padding: 37px;
+  margin-left: -50px;
 }
 
 .timeline-item.berklee::after {
-  background: url(../images/berklee_logo.png) no-repeat left top;
-  padding: 40px 40px 40px 40px;
+  background: url(../images/berklee_logo.png) no-repeat right top;
   background-size: 55%;
+  padding: 37px;
+  margin-left: -50px;
 }
 
 .timeline-item.google::after {
-  background: url(../images/google_logo.png) no-repeat left top;
-  padding: 40px 40px 40px 40px;
+  background: url(../images/google_logo.png) no-repeat right top;
   background-size: 55%;
+  padding: 37px;
+  margin-left: -50px;
 }
 
 .timeline-item.apple::after {
-  background: url(../images/apple_logo.png) no-repeat left top;
-  padding: 40px 40px 40px 40px;
+  background: url(../images/apple_logo.png) no-repeat right top;
   background-size: 55%;
+  padding: 37px;
+  margin-left: -50px;
 }
 
 .timeline-item.merl::after {
-  background: url(../images/merl_logo.png) no-repeat left top;
-  padding: 40px 40px 40px 40px;
+  background: url(../images/merl_logo.png) no-repeat right top;
   background-size: 55%;
+  padding: 37px;
+  margin-left: -50px;
 }
 
 .timeline-item.mit::after {
-  background: url(../images/mit_logo.png) no-repeat left top;
-  padding: 40px 40px 40px 40px;
+  background: url(../images/mit_logo.png) no-repeat right top;
   background-size: 55%;
+  padding: 37px;
+  margin-left: -50px;
 }
 
 .timeline-text {
