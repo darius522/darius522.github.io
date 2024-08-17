@@ -870,6 +870,13 @@ timeline-item.p3 {
   margin-left: -50px;
 }
 
+.timeline-item.netflix::after {
+  background: url(../images/netflix_logo.png) no-repeat right top;
+  background-size: 55%;
+  padding: 37px;
+  margin-left: -50px;
+}
+
 .timeline-item.google::after {
   background: url(../images/google_logo.png) no-repeat right top;
   background-size: 55%;
