@@ -134,6 +134,12 @@ a { text-decoration: none; }
 
 li { list-style: none; }
 
+ul {
+  list-style: circle; /* Adds default bullets */
+  margin-left: 10px; /* Optional: Adjust indentation */
+  padding-left: 10px;
+}
+
 img, ion-icon, a, button, time, span { display: block; }
 
 button {
