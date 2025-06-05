@@ -876,6 +876,13 @@ timeline-item.p3 {
   margin-left: -50px;
 }
 
+.timeline-item.amazon::after {
+  background: url(../images/amazon_logo.png) no-repeat right top;
+  background-size: 55%;
+  padding: 37px;
+  margin-left: -50px;
+}
+
 .timeline-item.netflix::after {
   background: url(../images/netflix_logo.png) no-repeat right top;
   background-size: 55%;
