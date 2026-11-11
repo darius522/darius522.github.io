@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PVQJHP8S6M"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-PVQJHP8S6M');
+  </script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="HE-NAC: High-Efficiency Neural Audio Coding via Hierarchical and Residual Multi-Band Quantization. Paper, audio examples, and code.">
+  <title>HE-NAC - Darius Pétermann</title>
+  <link rel="shortcut icon" href="../assets/images/logo.ico" type="image/x-icon">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <main>
+    <aside class="sidebar" data-sidebar>
+      <div class="sidebar-info">
+        <figure class="avatar-box">
+          <img src="../assets/images/avatar.png" alt="Darius Pétermann" width="80">
+        </figure>
+        <div class="info-content">
+          <h1 class="name" title="Darius Pétermann">Darius Pétermann 🇨🇭</h1>
+          <p class="title">AI Researcher in Audio &#x1F3A7;</p>
+        </div>
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+      </div>
+      <div class="separator"></div>
+      <ul class="social-list">
+        <li class="social-item">
+          <a href="https://scholar.google.com/citations?user=e5ARpUAAAAAJ&amp;hl=en" class="social-link" aria-label="Google Scholar">
+            <ion-icon name="school"></ion-icon>
+          </a>
+        </li>
+        <li class="social-item">
+          <a href="https://www.linkedin.com/in/darius-petermann/" class="social-link" aria-label="LinkedIn">
+            <ion-icon name="logo-linkedin"></ion-icon>
+          </a>
+        </li>
+        <li class="social-item">
+          <a href="https://github.com/darius522" class="social-link" aria-label="GitHub">
+            <ion-icon name="logo-github"></ion-icon>
+          </a>
+        </li>
+        <li class="social-item">
+          <a href="mailto:darius.petermann@gmail.com" class="social-link" aria-label="Email">
+            <ion-icon name="paper-plane"></ion-icon>
+          </a>
+        </li>
+      </ul>
+    </aside>
+
+    <div class="main-content">
+      <nav class="navbar">
+        <ul class="navbar-list">
+          <li class="navbar-item">
+            <a class="navbar-link" href="../index.html">About</a>
+          </li>
+          <li class="navbar-item">
+            <a class="navbar-link" href="../resume.html">CV</a>
+          </li>
+          <li class="navbar-item">
+            <a class="navbar-link active" href="../projects.html">Projects</a>
+          </li>
+        </ul>
+      </nav>
+
+      <article class="about active" data-page="he-nac">
+        <header>
+          <h2 class="h2 article-title">HE-NAC</h2>
+        </header>
+
+        <section class="about-text" aria-labelledby="project-title">
+          <h3 class="h3" id="project-title">High-Efficiency Neural Audio Coding via Hierarchical and Residual Multi-Band Quantization</h3>
+          <p>IEEE Transactions on Audio, Speech and Language Processing, 2026</p>
+
+          <div class="project-links" aria-label="Project resources">
+            <a class="project-btn" href="https://ieeexplore.ieee.org/abstract/document/11718947" aria-label="Read the HE-NAC paper" title="Paper">
+              <ion-icon name="document-text" aria-hidden="true"></ion-icon>
+            </a>
+            <a class="project-btn" href="https://minjekim.com/research-projects/he-nac/" aria-label="HE-NAC project and audio examples" title="Project and audio examples">
+              <ion-icon name="globe" aria-hidden="true"></ion-icon>
+            </a>
+            <a class="project-btn" href="https://github.com/darius522/henac" aria-label="HE-NAC code on GitHub" title="Code on GitHub">
+              <ion-icon name="logo-github" aria-hidden="true"></ion-icon>
+            </a>
+          </div>
+
+          <p><b>Project Description:</b></p>
+          <p>
+            High-fidelity music compression requires preserving detailed high-frequency content, which can be lost through aggressive temporal downsampling and quantization. We introduce HE-NAC, a neural audio codec that builds on HARP-Net and Multi-band HARP-Net to distribute the bitrate across core, mid, and high frequency bands.
+          </p>
+          <p>
+            HE-NAC combines multi-band residual vector quantization with a staged training strategy. We first train the core-band path to reconstruct the full signal through blind upsampling, then train the mid- and high-band paths to encode the residual information missing from the preceding stages. This lets the codec predict upper-band content from the lower bands while spending additional bits on details that need explicit reconstruction.
+          </p>
+
+          <figure class="project-figure">
+            <img src="../assets/images/projects_taslp2026_henac.jpg" alt="HE-NAC encoder and three decoder paths, with residual vector quantizers for the core, mid, and high bands and progressive training across three stages" width="1566" height="1110" loading="lazy">
+            <figcaption>The HE-NAC architecture and its three training stages. Figure from our paper.</figcaption>
+          </figure>
+
+          <p>
+            In listening tests on 32 kHz music, HE-NAC at approximately 23 kbps outperforms a DAC baseline at a comparable bitrate and HE-AAC at 24 kbps. Objective metrics also support improved reconstruction quality, particularly in the upper frequency bands.
+            Visit the <a href="https://minjekim.com/research-projects/he-nac/">project page</a> for audio comparisons and the <a href="https://github.com/darius522/henac">code repository</a> for training, inference, and evaluation.
+          </p>
+        </section>
+
+        <section class="about-text" aria-labelledby="citation-title">
+          <h3 class="h3 about-section-title" id="citation-title">Citation</h3>
+          <p>
+            <b>D. Pétermann</b>, W. Lim, S. Beack, and M. Kim, “HE-NAC: High-Efficiency Neural Audio Coding via Hierarchical and Residual Multi-Band Quantization,” IEEE Transactions on Audio, Speech and Language Processing, vol. 34, pp. 4672-4686, 2026, doi: <a href="https://doi.org/10.1109/TASLPRO.2026.3739174">10.1109/TASLPRO.2026.3739174</a>.
+          </p>
+        </section>
+      </article>
+
+      <footer class="site-footer">
+        <p>&copy; 2026 Darius Pétermann &middot; Last updated November 2026</p>
+      </footer>
+    </div>
+  </main>
+  <script src="../assets/js/script.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

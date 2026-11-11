@@ -167,7 +167,7 @@ a { text-decoration: none; }
   color: var(--vegas-gold);
 }
 
-.navbar-item > a {
+.navbar-item > a:not(.navbar-link) {
   display: block;
   color: inherit;
   font-weight: inherit;
@@ -1604,6 +1604,36 @@ timeline-item.p3 {
   height: 100%;
   object-fit: cover;
   transition: var(--transition-1);
+}
+
+.he-nac-banner { background: white; }
+
+.he-nac-banner img {
+  object-fit: contain;
+  padding: 10px;
+}
+
+.project-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 20px 0 24px;
+}
+
+.project-figure { margin: 24px 0; }
+
+.project-figure img {
+  width: 100%;
+  height: auto;
+  background: white;
+  border-radius: 12px;
+}
+
+.project-figure figcaption {
+  margin-top: 10px;
+  color: var(--light-gray-70);
+  font-size: var(--fs-7);
+  line-height: 1.6;
 }
 
 .blog-post-item > a:hover .blog-banner-box img,
